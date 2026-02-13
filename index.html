@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Люблю безумно</title>
+    <link rel="stylesheet" href="style.css">
+
+     
+</head>
+<body>
+
+<audio src="bridge-LABUBA.mp3" autoplay> </audio> <audio src="bridge-LABUBA.mp3" type="audio/mpeg"> Ваш браузер не поддерживает тег audio. </audio>
+
+
+    <div class="container">
+        <h1>❤️ С 14 Февраля! ❤️</h1>
+        <button id="openPopupBtn">Click suda, pzh, my love</button>
+    </div>
+    <div id="lovePopup" class="modal">
+        <div class="modal-content">
+            <p>
+                Мой сладкая, я тебя безумно сильно люблю! 💕 <br><br>
+                Спасибо, что ты есть в моей жизни, я очень счастлива. <br>
+                Каждый день с тобой — это счастье, ну реал. <br>
+                Ты лучшее, что появилось в моей жизни, и я очень надеюсь, что ты будешь со мной всегда. <br>
+                Я действительно счастлива и надеюсь, что я правда не причиняю тебе неудобств. Люблю тебя безумно! ❤️
+                Ты - моя причина просыпаться по утрам и хотя бы немного не забивать на себя.<br>
+                Я могу не всегда быть самой классной женщиной, но какую имеешь, не жалуйся. ❤️ <br>
+            </p>
+            <button class="close-btn" id="closePopupBtn">Mozhesh zakrit. If u dont like it.
+            </button>
+        </div>
+    </div>
+
+    <script>
+    
+        const openBtn = document.getElementById('openPopupBtn');
+        const closeBtn = document.getElementById('closePopupBtn');
+        const popup = document.getElementById('lovePopup');
+
+       
+        openBtn.addEventListener('click', function() {
+            popup.style.display = 'flex';
+        });
+
+    
+        closeBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+
+        
+        popup.addEventListener('click', function(event) {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+
+<div style="position: fixed; bottom: 10px; right: 10px; opacity: 0.5; font-size: 20px;">
+        💖
+    </div>
+
+</body>
+</html>
